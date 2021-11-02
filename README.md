@@ -71,12 +71,12 @@ cd src
     Option A: No hyperparameter search.
     - The surrogate model can be built usind default parameters by setting the value of --param_search as no
     ```
-    python3 feature_selection.py --tenant standard --bucket nrcan-btap --in_obj_name output_data/preprocessing_out --output_path output_data/feature_out --estimator_type elasticnet```python3 predict.py --tenant standard --bucket nrcan-btap --param_search no --in_obj_name output_data/preprocessing_out --features output_data/feature_out --output_path output_data/predict_out 
+    python3 predict.py --tenant standard --bucket nrcan-btap --param_search no --in_obj_name output_data/preprocessing_out --features output_data/feature_out --output_path output_data/predict_out 
     ```
     Option B: With hyperparameter search.
     - The surrogate model can be built usind default parameters by setting the value of --param_search as yes
     ```
-    python3 feature_selection.py --tenant standard --bucket nrcan-btap --in_obj_name output_data/preprocessing_out --output_path output_data/feature_out --estimator_type elasticnet```python3 predict.py --tenant standard --bucket nrcan-btap --param_search yes --in_obj_name output_data/preprocessing_out --features output_data/feature_out --output_path output_data/predict_out 
+    ```python3 predict.py --tenant standard --bucket nrcan-btap --param_search yes --in_obj_name output_data/preprocessing_out --features output_data/feature_out --output_path output_data/predict_out 
     ```
     
 - **step 4)** tensorboard (optional):    
